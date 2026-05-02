@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Appaso Avaghadi — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-name">Appaso Avaghadi</div>
+  <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
+  <div class="loader-label">Initializing Portfolio…</div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">AA</a>
+  <ul class="nav-links">
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div id="nav-drawer">
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- PARTICLE CANVAS -->
+<canvas id="particle-canvas"></canvas>
+
+<main>
+
+  <!-- ══ HERO ══ -->
+  <div id="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag">Software Developer</div>
+        <h1 class="hero-name">Appaso<br>Avaghadi</h1>
+        <p class="hero-role">Building systems that scale, crafting interfaces that matter.</p>
+        <p class="hero-obj">M.Sc. Computer Science graduate seeking an IT role to apply coding skills and problem-solving abilities in real-world projects — contributing to growth while continuously learning.</p>
+        <div class="hero-cta">
+          <a href="mailto:appaso1919@gmail.com" class="btn-primary">Get in Touch</a>
+          <a href="https://github.com/Appaso1919" target="_blank" class="btn-outline">GitHub ↗</a>
+          <a href="https://linkedin.com/in/appaso-avaghadi" target="_blank" class="btn-outline">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-card-wrap">
+        <div class="hero-card">
+          <div class="card-avatar">AA</div>
+          <div class="card-chip">Available for Opportunities</div>
+          <div class="card-label">Appaso Avaghadi</div>
+          <div class="card-badge">
+            <span class="badge active">React</span>
+            <span class="badge active">Python</span>
+            <span class="badge">Java</span>
+            <span class="badge">Next.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+      Scroll
+    </div>
+  </div>
+
+  <!-- ══ MARQUEE ══ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <!-- duplicated for seamless loop -->
+      <div class="marquee-item"><span>Softech Solutions</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>HFP Technology</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item">React <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Next.js <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Python <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Machine Learning <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Tailwind CSS <div class="marquee-dot"></div></div>
+      <div class="marquee-item">MySQL <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Oracle Certified <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Shivaji University <div class="marquee-dot"></div></div>
+      <div class="marquee-item">CGPA 9.24 <div class="marquee-dot"></div></div>
+      <!-- repeat -->
+      <div class="marquee-item"><span>Softech Solutions</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>HFP Technology</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item">React <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Next.js <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Python <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Machine Learning <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Tailwind CSS <div class="marquee-dot"></div></div>
+      <div class="marquee-item">MySQL <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Oracle Certified <div class="marquee-dot"></div></div>
+      <div class="marquee-item">Shivaji University <div class="marquee-dot"></div></div>
+      <div class="marquee-item">CGPA 9.24 <div class="marquee-dot"></div></div>
+    </div>
+  </div>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience">
+    <div class="reveal fade-up">
+      <div class="section-label">01 / Experience</div>
+      <h2 class="section-title">Professional <span>Journey</span></h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal slide-left">
+        <div>
+          <div class="exp-title">System Engineer</div>
+          <div class="exp-company">Softech Solutions &amp; Services</div>
+          <div class="exp-place">📍 Pune</div>
+        </div>
+        <div class="exp-date">Jul 2025 – Present</div>
+        <ul class="exp-duties">
+          <li>Managing system configurations, software installations, and performance monitoring.</li>
+          <li>Collaborating with development teams to ensure system reliability, scalability, and data security.</li>
+          <li>Troubleshooting hardware and software issues and implementing preventive maintenance plans.</li>
+        </ul>
+      </div>
+      <div class="exp-card reveal slide-right">
+        <div>
+          <div class="exp-title">Frontend Developer Intern</div>
+          <div class="exp-company">HFP Technology Pvt. Ltd.</div>
+          <div class="exp-place">📍 Thane</div>
+        </div>
+        <div class="exp-date">May 2025 – Oct 2025</div>
+        <ul class="exp-duties">
+          <li>Developing responsive UI using React, Next.js, TypeScript, and Tailwind CSS.</li>
+          <li>Building reusable components to optimize performance and maintainability.</li>
+          <li>Collaborating with designers and developers for improved user experience.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <div class="reveal fade-up">
+      <div class="section-label">02 / Projects</div>
+      <h2 class="section-title">Personal <span>Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card reveal slide-left">
+        <div class="project-year">2025</div>
+        <div class="project-name">Garment Sales Prediction</div>
+        <div class="project-stack">
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">Pandas</span>
+          <span class="stack-tag">Matplotlib</span>
+          <span class="stack-tag">Machine Learning</span>
+        </div>
+        <ul class="project-desc">
+          <li>Built a predictive model using historical garment sales data.</li>
+          <li>Implemented Linear Regression, Random Forest, and Gradient Boosting models.</li>
+          <li>Evaluated performance using MAE, RMSE, and R² metrics.</li>
+          <li>Visualized trends and predictions using interactive charts.</li>
+        </ul>
+      </div>
+      <div class="project-card reveal slide-right">
+        <div class="project-year">2024</div>
+        <div class="project-name">Online Bookstore Management System</div>
+        <div class="project-stack">
+          <span class="stack-tag">JSP</span>
+          <span class="stack-tag">JDBC</span>
+          <span class="stack-tag">MySQL</span>
+        </div>
+        <ul class="project-desc">
+          <li>Role-based access control for Admin and Customer roles.</li>
+          <li>Implemented search, sort, and filter features across the catalog.</li>
+          <li>Designed frontend using JSP with full CRUD operations via JDBC.</li>
+          <li>Created MySQL database schema for structured data storage.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section id="skills">
+    <div class="reveal fade-up">
+      <div class="section-label">03 / Skills</div>
+      <h2 class="section-title">Technical <span>Skills</span></h2>
+    </div>
+    <div class="skills-wrapper">
+      <div class="skill-group reveal slide-left">
+        <h3>Languages</h3>
+        <div class="skill-item">
+          <div class="skill-header"><span>Java</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Python</span><span class="skill-pct">82%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>JavaScript</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>TypeScript</span><span class="skill-pct">70%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="70"></div></div>
+        </div>
+      </div>
+      <div class="skill-group reveal fade-up">
+        <h3>Frameworks & Tools</h3>
+        <div class="skill-item">
+          <div class="skill-header"><span>React</span><span class="skill-pct">88%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Next.js</span><span class="skill-pct">78%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>Tailwind CSS</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>HTML / CSS</span><span class="skill-pct">92%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="92"></div></div>
+        </div>
+      </div>
+      <div class="skill-group reveal slide-right">
+        <h3>Databases & Tools</h3>
+        <div class="skill-item">
+          <div class="skill-header"><span>MySQL / SQL</span><span class="skill-pct">80%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>GitHub</span><span class="skill-pct">85%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>VS Code</span><span class="skill-pct">90%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-header"><span>IntelliJ IDEA</span><span class="skill-pct">75%</span></div>
+          <div class="skill-track"><div class="skill-bar" data-width="75"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EDUCATION & LANGUAGES ══ -->
+  <section id="education">
+    <div class="reveal fade-up">
+      <div class="section-label">04 / Education</div>
+      <h2 class="section-title">Education & <span>Languages</span></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card reveal slide-left">
+        <div class="edu-degree">M.Sc. in Computer Science</div>
+        <div class="edu-institution">Shivaji University, Kolhapur</div>
+        <div class="edu-meta">Jun 2023 – Apr 2025 &nbsp;·&nbsp; Kolhapur, India</div>
+        <div class="edu-gpa">
+          <div class="edu-gpa-dot"></div>
+          CGPA: 8.06
+        </div>
+      </div>
+      <div class="edu-card reveal slide-right">
+        <div class="edu-degree">B.Sc. in Computer Science</div>
+        <div class="edu-institution">Shri Annashaeb Dange College</div>
+        <div class="edu-meta">Jun 2020 – May 2023 &nbsp;·&nbsp; Hatakangle, India</div>
+        <div class="edu-gpa">
+          <div class="edu-gpa-dot"></div>
+          CGPA: 9.24
+        </div>
+      </div>
+    </div>
+    <div class="reveal fade-up">
+      <h3 style="font-family:'Syne',sans-serif;font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent2);margin-bottom:20px;">Language Proficiency</h3>
+      <div class="lang-badges">
+        <div class="lang-badge">
+          <span class="lang-flag">🇮🇳</span>
+          <div>
+            <div class="lang-name">Marathi</div>
+            <div class="lang-level">Native</div>
+          </div>
+        </div>
+        <div class="lang-badge">
+          <span class="lang-flag">🇮🇳</span>
+          <div>
+            <div class="lang-name">Hindi</div>
+            <div class="lang-level">Fluent</div>
+          </div>
+        </div>
+        <div class="lang-badge">
+          <span class="lang-flag">🇬🇧</span>
+          <div>
+            <div class="lang-name">English</div>
+            <div class="lang-level">Professional</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATIONS ══ -->
+  <section id="certifications">
+    <div class="reveal fade-up">
+      <div class="section-label">05 / Certifications</div>
+      <h2 class="section-title">Certificates &amp; <span>Achievements</span></h2>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card reveal fade-up">
+        <div class="cert-icon">☕</div>
+        <div>
+          <div class="cert-name">Java Programmer — Fundamentals</div>
+          <div class="cert-issuer">Oracle</div>
+          <div class="cert-date">Apr 2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal fade-up" style="transition-delay:.1s">
+        <div class="cert-icon">📊</div>
+        <div>
+          <div class="cert-name">Data Analytics Essentials</div>
+          <div class="cert-issuer">Cisco</div>
+          <div class="cert-date">Oct 2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal fade-up" style="transition-delay:.2s">
+        <div class="cert-icon">🤖</div>
+        <div>
+          <div class="cert-name">Generative AI Fundamentals</div>
+          <div class="cert-issuer">LinkedIn Learning</div>
+          <div class="cert-date">Jun 2024</div>
+        </div>
+      </div>
+      <div class="cert-card reveal fade-up" style="transition-delay:.3s">
+        <div class="cert-icon">🎤</div>
+        <div>
+          <div class="cert-name">International Conference Participant</div>
+          <div class="cert-issuer">Recent Trends in CS & IT, Gaganbavda</div>
+          <div class="cert-date">2024</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact" style="max-width:100%;padding-left:0;padding-right:0;">
+    <div class="contact-inner">
+      <div>
+        <div class="reveal fade-up">
+          <div class="section-label">06 / Contact</div>
+          <h2 class="section-title">Let's <span>Connect</span></h2>
+        </div>
+        <div class="contact-cards">
+          <a href="mailto:appaso1919@gmail.com" class="contact-card reveal slide-left">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <div class="contact-label">Email</div>
+              <div class="contact-value">appaso1919@gmail.com</div>
+            </div>
+          </a>
+          <a href="tel:+918381031554" class="contact-card reveal slide-left" style="transition-delay:.1s">
+            <div class="contact-icon">📱</div>
+            <div>
+              <div class="contact-label">Phone</div>
+              <div class="contact-value">+91-8381031554</div>
+            </div>
+          </a>
+          <div class="contact-card reveal slide-left" style="transition-delay:.2s">
+            <div class="contact-icon">📍</div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Maharashtra, India</div>
+            </div>
+          </div>
+          <div class="contact-card reveal slide-left" style="transition-delay:.3s">
+            <div class="contact-icon">💼</div>
+            <div>
+              <div class="contact-label">Availability</div>
+              <div class="contact-value" style="color:var(--accent2)">Open to Opportunities</div>
+            </div>
+          </div>
+          <a href="https://github.com/Appaso1919" target="_blank" class="contact-card reveal slide-left" style="transition-delay:.4s">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">github.com/Appaso1919</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/appaso-avaghadi" target="_blank" class="contact-card reveal slide-left" style="transition-delay:.5s">
+            <div class="contact-icon">🔗</div>
+            <div>
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">linkedin.com/in/appaso-avaghadi</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="avatar-ripple-wrap reveal fade-up">
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="ripple"></div>
+        <div class="avatar-circle">AA</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Crafted with precision — <span>Appaso Avaghadi</span> &copy; 2025</p>
+</footer>
+</body>
+</html>
